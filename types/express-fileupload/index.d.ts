@@ -1,4 +1,4 @@
-// Type definitions for express-fileupload 0.1
+// Type definitions for express-fileupload 0.4.0
 // Project: https://github.com/richardgirges/express-fileupload#readme
 // Definitions by: Gintautas Miselis <https://github.com/Naktibalda>
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
@@ -29,6 +29,7 @@ declare namespace fileUpload {
         mimetype: string;
         data: Buffer;
         mv(path: string, callback: (err: any) => void): void;
+        mv(path: string): Promise<any>;
     }
 
     interface Options {
